@@ -62,3 +62,6 @@ SJF 방식은 가장 적은 작업 시간을 가지는 프로세스를 먼저 �
 Time quantum이 무한에 가까워질수록 퍼포먼스는 FCFS와 같아진다.
 Time quantum이 0에 가까워질수록 컨텍스트 스위칭이 매우 빈번하게 일어나므로 오버헤드도 증가한다.
 
+## References
+* https://wisdom-and-record.tistory.com/86?category=932460
+* https://hyunah030.tistory.com/4
