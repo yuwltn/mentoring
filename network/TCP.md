@@ -283,3 +283,12 @@ UDP는 비연결형 서비스이기 때문에, 연결을 설정하고 해제하�
 그렇기 때문에 신뢰성보다는 `연속성`이 중요한 서비스이다. 예를 들면 실시간 서비스(Streaming)에 자주 사용된다.
 
 <img src="https://github.com/yuwltn/yuwltn/blob/main/photo/TCPUDP.PNG" width="550" height="400" >
+
+## References
+* https://ko.wikipedia.org/wiki/%EC%A0%84%EC%86%A1_%EC%A0%9C%EC%96%B4_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C
+* https://aws-hyoh.tistory.com/entry/TCPIP-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0
+* https://jsonsang2.tistory.com/17
+* https://gyoogle.dev/blog/computer-science/network/%ED%9D%90%EB%A6%84%EC%A0%9C%EC%96%B4%20&%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4.html
+* https://steady-coding.tistory.com/507
+* https://velog.io/@nnnyeong/Networking-TCP-vs-UDP
+* https://mangkyu.tistory.com/15
