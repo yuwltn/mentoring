@@ -42,6 +42,8 @@ OSI 7 Layer가 나오기 전에 설계된 모델<br>
 문서나 책마다 5계층으로 나누는 경우도 있다.
 Network Interface 계층을 데이터 링크 계층과 물리 계층을 나누냐 안나누냐에 따른 차이이다.
 
+세부적으로 이론적으로 잘 알아야 하기 때문에 학교에서 OSI 7 Layer를 알려준다.
+
 <img src="https://github.com/yuwltn/yuwltn/blob/main/photo/TCPIP.PNG" width="500" height="300" >
 
 ## References
