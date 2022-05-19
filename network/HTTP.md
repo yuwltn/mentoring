@@ -145,6 +145,12 @@ Content-Type: text/html;
   * 앞 요청의 응답을 기다리지 않고 순차적인 여러 요청을 연속적으로 보내고 그 순서에 맞춰 응답을 받는 방식이다.
   * 순차적으로 하나씩 요청/응답이 처리되는 기존 방식을 개선했다.
   * 하나의 커넥션에 여러개의 요청이 들어있을 뿐, 동시에 여러개의 요청을 처리해 응답으로 보내주는 것은 아니다.(`다중화(Multiplexing)`이 되지는 않는다.)
+* Keep Alive 지원
+  * 이미 연결되어 있는 TCP 연결을 재사용하는 기능
+  * Handshake 과정이 생략되므로 성능 향상을 기대할 수 있다.
+  * Keep Alive 유지시간은 연결된 소켓에 I/O Access가 마지막으로 종료된 시점에서 정의된 시간까지 Access가 없더라도 세션을 유지하는 구조이다. 즉 정의된 시간 내에 Access가 이루어진다면 계속 연결된 상태를 유지할 수 있다.
+  * 정적자원(HTML, 이미지 파일 등)으로만 구성된 웹 서버에 Keep Alive를 사용할 경우 약 50%의 성능 향상을 보인다.
+  * Kepp Alive 기능은 설계상 문제가 있기 때문에 HTTP/1.1 명세에서는 제외되었지만 한 번 생성된 커넥션을 재사용한다는 개념은 유지되었다.
 
 한계
 * Head Of Line blocking(HOL) -> HTTP 2.0에서 개선
@@ -196,3 +202,4 @@ HTTP 2.0 한계
 * https://velog.io/@surim014/HTTP%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80
 * https://www.joinc.co.kr/w/Site/Network_Programing/AdvancedComm/HTTP
 * https://velog.io/@neity16/HTTP-HTTP-%EB%B2%84%EC%A0%84-%EB%B3%84-%ED%8A%B9%EC%A7%95
+* https://goodgid.github.io/HTTP-Keep-Alive/
