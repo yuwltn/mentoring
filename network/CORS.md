@@ -28,10 +28,7 @@ CORS는 추가 HTTP 헤더를 사용하여, 한 출처에서 실행중인 웹 �
   만약 유효하지 않다면 그 응답을 사용하지 않고 버린다.
   
 ## CORS 해결방법 두가지
-1. Chrome 확장 프로그램 이용<br>
-  Allow CORS: Access-Control-Allow-Origin을 설치해준다.<br>
-  해당 프로그램을 활성화 시키게 되면, 로컬 환경에서 API를 사용시, CORS 문제를 해결할 수 있다.
-2. 서버에서 Access-Control-Allow-Origin 세팅하기<br>
+1. 서버에서 Access-Control-Allow-Origin 세팅하기<br>
   가장 정성적이고 근본적인 해결책이다.
   ```
   res.setHeader('Access-Control-Allow-origin', '*');
@@ -43,6 +40,8 @@ CORS는 추가 HTTP 헤더를 사용하여, 한 출처에서 실행중인 웹 �
   res.setHeader('Access-Control-Allow-origin', 'http://example.com');
   ```
   그래서 가급적 귀찮더라도 출처를 명시해주는 것이 좋다.
+2. Proxy
+    
   
   ## References
   * https://inpa.tistory.com/entry/WEB-%F0%9F%93%9A-CORS-%F0%9F%92%AF-%EC%A0%95%EB%A6%AC-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95-%F0%9F%91%8F
