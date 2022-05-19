@@ -70,3 +70,5 @@ VIP를 정상 AP 서버로 인계하는 방식을 사용한다.<br>
 접속 클라이언트 수가 가장 적은 서버를 선택한다. 로드 밸런서에서 실시간으로 connection 수를 관리하거나<br>
 각 서버에서 주기적으로 알려주는 것이 필요하다.
 
+## References
+* http://dailusia.blog.fc2.com/blog-entry-362.html
