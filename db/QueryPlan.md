@@ -81,3 +81,8 @@ SCAN 방법 3가지
 반대로 많은 데이터가 있는 테이블에서 내가 원하는 데이터를 추출해야 하는 상황이라면
 INDEX SCAN을 하는 것이 좋다.
 
+## References
+* https://coding-factory.tistory.com/744
+* https://coding-factory.tistory.com/743
+* https://jeong-pro.tistory.com/243?category=800472
+* https://velog.io/@sihyung92/query-tunning-1-execution-plan
